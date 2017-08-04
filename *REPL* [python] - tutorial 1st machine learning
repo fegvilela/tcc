@@ -1,0 +1,257 @@
+Python 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas
+from pandas.tools.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+>>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> # Load dataset
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = pandas.read_csv(url, names=names)
+... >>> >>> # shape
+print(dataset.shape)
+
+>>> ... (150, 5)
+>>> >>> # head
+print(dataset.head(20))
+...     sepal-length  sepal-width  petal-length  petal-width        class
+0            5.1          3.5           1.4          0.2  Iris-setosa
+1            4.9          3.0           1.4          0.2  Iris-setosa
+2            4.7          3.2           1.3          0.2  Iris-setosa
+3            4.6          3.1           1.5          0.2  Iris-setosa
+4            5.0          3.6           1.4          0.2  Iris-setosa
+5            5.4          3.9           1.7          0.4  Iris-setosa
+6            4.6          3.4           1.4          0.3  Iris-setosa
+7            5.0          3.4           1.5          0.2  Iris-setosa
+8            4.4          2.9           1.4          0.2  Iris-setosa
+9            4.9          3.1           1.5          0.1  Iris-setosa
+10           5.4          3.7           1.5          0.2  Iris-setosa
+11           4.8          3.4           1.6          0.2  Iris-setosa
+12           4.8          3.0           1.4          0.1  Iris-setosa
+13           4.3          3.0           1.1          0.1  Iris-setosa
+14           5.8          4.0           1.2          0.2  Iris-setosa
+15           5.7          4.4           1.5          0.4  Iris-setosa
+16           5.4          3.9           1.3          0.4  Iris-setosa
+17           5.1          3.5           1.4          0.3  Iris-setosa
+18           5.7          3.8           1.7          0.3  Iris-setosa
+19           5.1          3.8           1.5          0.3  Iris-setosa
+>>> print(dataset)
+     sepal-length  sepal-width  petal-length  petal-width           class
+0             5.1          3.5           1.4          0.2     Iris-setosa
+1             4.9          3.0           1.4          0.2     Iris-setosa
+2             4.7          3.2           1.3          0.2     Iris-setosa
+3             4.6          3.1           1.5          0.2     Iris-setosa
+4             5.0          3.6           1.4          0.2     Iris-setosa
+5             5.4          3.9           1.7          0.4     Iris-setosa
+6             4.6          3.4           1.4          0.3     Iris-setosa
+7             5.0          3.4           1.5          0.2     Iris-setosa
+8             4.4          2.9           1.4          0.2     Iris-setosa
+9             4.9          3.1           1.5          0.1     Iris-setosa
+10            5.4          3.7           1.5          0.2     Iris-setosa
+11            4.8          3.4           1.6          0.2     Iris-setosa
+12            4.8          3.0           1.4          0.1     Iris-setosa
+13            4.3          3.0           1.1          0.1     Iris-setosa
+14            5.8          4.0           1.2          0.2     Iris-setosa
+15            5.7          4.4           1.5          0.4     Iris-setosa
+16            5.4          3.9           1.3          0.4     Iris-setosa
+17            5.1          3.5           1.4          0.3     Iris-setosa
+18            5.7          3.8           1.7          0.3     Iris-setosa
+19            5.1          3.8           1.5          0.3     Iris-setosa
+20            5.4          3.4           1.7          0.2     Iris-setosa
+21            5.1          3.7           1.5          0.4     Iris-setosa
+22            4.6          3.6           1.0          0.2     Iris-setosa
+23            5.1          3.3           1.7          0.5     Iris-setosa
+24            4.8          3.4           1.9          0.2     Iris-setosa
+25            5.0          3.0           1.6          0.2     Iris-setosa
+26            5.0          3.4           1.6          0.4     Iris-setosa
+27            5.2          3.5           1.5          0.2     Iris-setosa
+28            5.2          3.4           1.4          0.2     Iris-setosa
+29            4.7          3.2           1.6          0.2     Iris-setosa
+..            ...          ...           ...          ...             ...
+120           6.9          3.2           5.7          2.3  Iris-virginica
+121           5.6          2.8           4.9          2.0  Iris-virginica
+122           7.7          2.8           6.7          2.0  Iris-virginica
+123           6.3          2.7           4.9          1.8  Iris-virginica
+124           6.7          3.3           5.7          2.1  Iris-virginica
+125           7.2          3.2           6.0          1.8  Iris-virginica
+126           6.2          2.8           4.8          1.8  Iris-virginica
+127           6.1          3.0           4.9          1.8  Iris-virginica
+128           6.4          2.8           5.6          2.1  Iris-virginica
+129           7.2          3.0           5.8          1.6  Iris-virginica
+130           7.4          2.8           6.1          1.9  Iris-virginica
+131           7.9          3.8           6.4          2.0  Iris-virginica
+132           6.4          2.8           5.6          2.2  Iris-virginica
+133           6.3          2.8           5.1          1.5  Iris-virginica
+134           6.1          2.6           5.6          1.4  Iris-virginica
+135           7.7          3.0           6.1          2.3  Iris-virginica
+136           6.3          3.4           5.6          2.4  Iris-virginica
+137           6.4          3.1           5.5          1.8  Iris-virginica
+138           6.0          3.0           4.8          1.8  Iris-virginica
+139           6.9          3.1           5.4          2.1  Iris-virginica
+140           6.7          3.1           5.6          2.4  Iris-virginica
+141           6.9          3.1           5.1          2.3  Iris-virginica
+142           5.8          2.7           5.1          1.9  Iris-virginica
+143           6.8
+ 3.2           5.9          2.3  Iris-virginica
+144           6.7          3.3           5.7          2.5  Iris-virginica
+145           6.7          3.0           5.2          2.3  Iris-virginica
+146           6.3          2.5           5.0          1.9  Iris-virginica
+147           6.5          3.0           5.2          2.0  Iris-virginica
+148           6.2          3.4           5.4          2.3  Iris-virginica
+149           5.9          3.0           5.1          1.8  Iris-virginica
+
+[150 rows x 5 columns]
+>>> >>> print(dataset.describe())
+       sepal-length  sepal-width  petal-length  petal-width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+>>> print(dataset.groupby('class').size())
+class
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+dtype: int64
+>>> dat
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dat' is not defined
+>>> dataset.hist()
+array([[<matplotlib.axes._subplots.AxesSubplot object at 0x1172f6b00>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ab02f98>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11ab67080>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11abc6f98>]], dtype=object)
+>>> plt.show()
+>>> dataset.plot(kind='box', subplots=True, lay)
+  File "<stdin>", line 1
+SyntaxError: positional argument follows keyword argument
+>>> dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+sepal-length       Axes(0.125,0.53;0.352273x0.35)
+sepal-width     Axes(0.547727,0.53;0.352273x0.35)
+petal-length       Axes(0.125,0.11;0.352273x0.35)
+petal-width     Axes(0.547727,0.11;0.352273x0.35)
+dtype: object
+>>> dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
+sepal-length       Axes(0.125,0.53;0.352273x0.35)
+sepal-width     Axes(0.547727,0.53;0.352273x0.35)
+petal-length       Axes(0.125,0.11;0.352273x0.35)
+petal-width     Axes(0.547727,0.11;0.352273x0.35)
+dtype: object
+>>> >>> scatter_matrix(dataset)
+plt.show()
+array([[<matplotlib.axes._subplots.AxesSubplot object at 0x113a98ef0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113b66518>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113bd0470>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113c2c048>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x113c96358>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113c96390>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113d50eb8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113dadcc0>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11cbb9e10>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x113bdad68>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ab6fd68>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ab23f28>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11f469908>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11b287eb8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ac7ecc0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11aad6080>]], dtype=object)
+>>> >>> scatter_matrix(dataset)
+array([[<matplotlib.axes._subplots.AxesSubplot object at 0x11f5d0b38>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11bd12d68>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x10fb132b0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x1209aa9b0>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11d59bcc0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11d59bcf8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11e8fc860>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11eb75668>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11ee127b8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ee704a8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11eed48d0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x1139c59b0>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x11b749e80>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11b2adf60>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11ab3d5f8>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x11b29f630>]], dtype=object)
+>>> array = dataset.values
+X = array[:,0:4]
+Y = array[:,4]
+validation_size = 0.2
+seed = 7
+X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+>>> >>> >>> >>> >>> >>> seed = 7
+scoring = 'accuracy'
+>>> >>> models = []
+models.append(('LR', LogisticRegression()))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC()))
+
+results = []
+names = []
+for name, model in models:
+	kfold = model_selection.KFold(n_splits = 10, random_state = seed)
+	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv = kfold, scoring = scoring)
+	results.append(cv_results)
+	names.append(name)
+	msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+	print(msg)
+>>> >>> >>> >>> >>> >>> >>> >>> >>> >>> ... ... ... ... ... ... ...
+LR: 0.966667 (0.040825)
+LDA: 0.975000 (0.038188)
+KNN: 0.983333 (0.033333)
+CART: 0.975000 (0.038188)
+NB: 0.975000 (0.053359)
+SVM: 0.991667 (0.025000)
+>>> fig = plt.figure()
+fig.suptitle('Algorithm Comparison')
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+plt.show()
+>>> <matplotlib.text.Text object at 0x11f418710>
+>>> >>> {'whiskers': [<matplotlib.lines.Line2D object at 0x11bf3beb8>, <matplotlib.lines.Line2D object at 0x11bf44710>, <matplotlib.lines.Line2D object at 0x11bf5b828>, <matplotlib.lines.Line2D object at 0x11bf5bfd0>, <matplotlib.lines.Line2D object at 0x11f062b00>, <matplotlib.lines.Line2D object at 0x11f06a9b0>, <matplotlib.lines.Line2D object at 0x11f080ac8>, <matplotlib.lines.Line2D object at 0x11f080c88>, <matplotlib.lines.Line2D object at 0x11f08fda0>, <matplotlib.lines.Line2D object at 0x11f08ff60>, <matplotlib.lines.Line2D object at 0x11f0ad710>, <matplotlib.lines.Line2D object at 0x11f0adf28>], 'caps': [<matplotlib.lines.Line2D object at 0x11bf44f28>, <matplotlib.lines.Line2D object at 0x11bf4b780>, <matplotlib.lines.Line2D object at 0x11f053898>, <matplotlib.lines.Line2D object at 0x11f053a58>, <matplotlib.lines.Line2D object at 0x11f06ab70>, <matplotlib.lines.Line2D object at 0x11f070a20>, <matplotlib.lines.Line2D object at 0x11f02a438>, <matplotlib.lines.Line2D object at 0x11f023b00>, <matplotlib.lines.Line2D object at 0x11f096e10>, <matplotlib.lines.Line2D object at 0x11f096fd0>, <matplotlib.lines.Line2D object at 0x11f0b4780>, <matplotlib.lines.Line2D object at 0x11f0b4f98>], 'boxes': [<matplotlib.lines.Line2D object at 0x11bf3b550>, <matplotlib.lines.Line2D object at 0x11bf53f60>, <matplotlib.lines.Line2D object at 0x11f0628d0>, <matplotlib.lines.Line2D object at 0x11f077be0>, <matplotlib.lines.Line2D object at 0x11f08f518>, <matplotlib.lines.Line2D object at 0x11f0a5828>], 'medians': [<matplotlib.lines.Line2D object at 0x11bf4b940>, <matplotlib.lines.Line2D object at 0x11f05b2b0>, <matplotlib.lines.Line2D object at 0x11f070be0>, <matplotlib.lines.Line2D object at 0x11f0204e0>, <matplotlib.lines.Line2D object at 0x11f09e828>, <matplotlib.lines.Line2D object at 0x11f0bc198>], 'fliers': [<matplotlib.lines.Line2D object at 0x11bf537f0>, <matplotlib.lines.Line2D object at 0x11f05bac8>, <matplotlib.lines.Line2D object at 0x11f077a90>, <matplotlib.lines.Line2D object at 0x11f3c3eb8>, <matplotlib.lines.Line2D object at 0x11f0a56d8>, <matplotlib.lines.Line2D object at 0x11f0bcf60>], 'means': []}
+>>> [<matplotlib.text.Text object at 0x11f003748>, <matplotlib.text.Text object at 0x11f03d128>, <matplotlib.text.Text object at 0x11f0c5eb8>, <matplotlib.text.Text object at 0x11f0ca8d0>, <matplotlib.text.Text object at 0x11f0d12e8>, <matplotlib.text.Text object at 0x11f0d1cc0>]
+>>> >>>
+>>>
+>>>
+>>>
+>>> knn = KNeighborsClassifier()
+knn.fit(X_train, Y_train)
+predictions = knn.predict(X_validation)
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
+>>> KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+>>> >>> 0.9
+>>> [[ 7  0  0]
+ [ 0 11  1]
+ [ 0  2  9]]
+>>>                  precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00         7
+Iris-versicolor       0.85      0.92      0.88        12
+ Iris-virginica       0.90      0.82      0.86        11
+
+    avg / total       0.90      0.90      0.90        30
+
+>>>
