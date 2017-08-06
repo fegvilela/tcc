@@ -1,0 +1,21 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF-8
+
+@ARTICLE{bibtexkey,
+  author = {Qualquer Autor},
+  title = {Um título para o trabalho},
+  journal = {Journal of Academic Works},
+  year = {2015},
+  volume = {1},
+  pages = {1--2},
+  timestamp = {2015.11.27}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

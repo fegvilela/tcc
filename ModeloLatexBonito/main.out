@@ -1,0 +1,27 @@
+\BOOKMARK [0][-]{sumario.0}{Sum\341rio}{}% 1
+\BOOKMARK [0][-]{listadefiguras.0}{Lista de figuras}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Sobre o Deficiente Visual e Tecnologias Assistivas}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{O Deficiente Visual e a Tipografia}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Proposta de Projeto}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Sobre Tipografia}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Tipografia}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Sobre Reconhecimento de Padr\365es empregando Aprendizado de M\341quina}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Conceitos Gerais}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Extra\347\343o de Atributos}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.2.1}{Local Binary Pattern}{section.3.2}% 12
+\BOOKMARK [1][-]{section.3.3}{Classificadores}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.1}{M\341quina de Vetor de Suporte}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.2}{Floresta Aleat\363ria}{section.3.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Metodologia}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Composi\347\343o do Banco de Imagens}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Algoritmo para Treinamento do Modelo}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.2.1}{Est\341gio de pr\351-processamento}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.2}{Est\341gio de extra\347\343o de atributos}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.3}{Est\341gio de treinamento do modelo classificador e testes de predi\347\343o}{section.4.2}% 21
+\BOOKMARK [0][-]{chapter.5}{Resultados e Discuss\343o}{}% 22
+\BOOKMARK [1][-]{section.5.1}{Classifica\347\343o das Tipografias}{chapter.5}% 23
+\BOOKMARK [2][-]{subsection.5.1.1}{Utilizando Support Vector Machine}{section.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.1.2}{Utilizando Random Forest Classifier}{section.5.1}% 25
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 26
+\BOOKMARK [0][-]{section*.33}{REFER\312NCIAS BIBLIOGR\301FICAS}{}% 27
