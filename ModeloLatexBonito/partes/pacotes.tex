@@ -1,0 +1,64 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[thmmarks,amsmath]{ntheorem}%\usepackage{amsthm}
+\usepackage{boxedminipage}
+\usepackage{geometry}
+\usepackage{theorem}
+\usepackage{fancybox}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{makeidx}
+\usepackage{epstopdf}
+\usepackage{indentfirst}
+\usepackage[pdfstartview=FitH]{hyperref}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{graphicx}
+%\usepackage{etoolbox}
+%\usepackage{lipsum}
+%\usepackage[/fusion_builder_column][fusion_builder_column type="1_1" background_position="left top" background_color="" border_size="" border_color="" border_style="solid" spacing="yes" background_image="" background_repeat="no-repeat" padding="" margin_top="0px" margin_bottom="0px" class="" id="" animation_type="" animation_speed="0.3" animation_direction="left" hide_on_mobile="no" center_content="no" min_height="none"][portuguese]{babel}
+%\usepackage[portuguese]{babel}
+
+%\usepackage[pdftex,a5paper,%
+%pdftitle={The Ducks},%
+%pdfauthor={Mother Goose},%
+%colorlinks=true,%
+%linkcolor=blue%
+%]
+\usepackage[framed,numbered]{config/mcode}
+%\lstinputlisting{/path_to_mfile/yourmfile.m}
+\hypersetup{colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black
+}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{caption}
+%\captionsetup[table]{skip=10pt}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[font=small]{caption}
+\usepackage{lastpage}
+% Escolher um dos seguintes formatos:
+\usepackage{config/ft_unb} % segue padrão de fonte Times
+\usepackage[num,abnt-etal-list=0]{config/abntex2/abntex2cite} % Citações pela ABNT
+%\usepackage[alf,abnt-etal-list=0]{config/abntex2/abntex2cite}
+
+\newcommand{\citeC}[1]{[\citeonline{#1}]}
