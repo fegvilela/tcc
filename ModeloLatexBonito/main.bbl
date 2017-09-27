@@ -14,7 +14,7 @@ Dispon{\'\i}vel em: \url{https://www.classicposters.com/Bill\_Graham}.}
 \abntrefinfo{Cruz}{CRUZ}{2017}
 {CRUZ, L.
 \emph{Tipografia Tátil para Deficientes Visuais}.
-Tese (Doutorado) --- Universidade de Brasília, 2017.}
+Tese (Bacharelado em Design) --- Universidade de Brasília, 2017.}
 
 \bibitem{miranda2013handwritten}
 \abntrefinfo{Miranda et al.}{MIRANDA et al.}{2013}
@@ -23,19 +23,32 @@ Tese (Doutorado) --- Universidade de Brasília, 2017.}
   densities. In:  \emph{Proceedings of the IX Workshop de Viso Computacional}.
   [S.l.: s.n.], 2013.}
 
-\bibitem{Zramdini1995}
-\abntrefinfo{Zramdini}{ZRAMDINI}{1995}
-{ZRAMDINI, A.
-\emph{Study of optical font recognition based on global typographical
-  features}.
-Tese (Doutorado) --- University of Fribourg (Switzerland, 1995.}
-
 \bibitem{lorena2007}
 \abntrefinfo{Lorena e Carvalho}{LORENA; CARVALHO}{2007}
 {LORENA, A.~C.; CARVALHO, A.~C. de. Uma introdu{\c{c}}{\~a}o {\`a}s support
   vector machines.
 \emph{Revista de Inform{\'a}tica Te{\'o}rica e Aplicada}, v.~14, n.~2, p.
   43--67, 2007.}
+
+\bibitem{do2012}
+\abntrefinfo{Amaral e Thomaz}{AMARAL; THOMAZ}{2012}
+{AMARAL, V. do; THOMAZ, C.~E. Extra{\c{c}}ao e compara{\c{c}}ao de
+  caracter{\i}sticas locais e globais para o reconhecimento autom{\'a}tico de
+  imagens de faces. In:  \emph{VIII Workshop de Visao Computacional}. [S.l.:
+  s.n.], 2012.}
+
+\bibitem{zhao2011}
+\abntrefinfo{Zhao e Zhang}{ZHAO; ZHANG}{2011}
+{ZHAO, X.; ZHANG, S. Facial expression recognition based on local binary
+  patterns and kernel discriminant isomap.
+\emph{Sensors}, Molecular Diversity Preservation International, v.~11, n.~10,
+  p. 9573--9588, 2011.}
+
+\bibitem{martin2012}
+\abntrefinfo{Martin}{MARTIN}{2012}
+{MARTIN, C.~H. \emph{Kernels Part 1: What is an RBF Kernel? Really?} 2012.
+Dispon{\'\i}vel em:
+  \url{https://calculatedcontent.com/2012/02/06/kernels\_part\_1/}.}
 
 \bibitem{estatuto}
 \abntrefinfo{Brasil}{BRASIL}{2015}
@@ -168,17 +181,6 @@ ISSN 20416695.}
 \emph{Ci{\^{e}}ncias da Religi{\~{a}}o - Hist{\'{o}}ria e Sociedade}, v.~6,
   n.~2, p. 124 -- 135, 2008.}
 
-\bibitem{Kane2012}
-\abntrefinfo{Kane}{KANE}{2012}
-{KANE, J. \emph{Manual dos tipos}. [S.l.]: GG Brasil, 2012. 20--21~p.
-ISBN 8565985059.}
-
-\bibitem{Rodrigues2012}
-\abntrefinfo{Rodrigues}{RODRIGUES}{2012}
-{RODRIGUES, M. H.~C. {Gutenberg e o letramento do ocidente}.
-\emph{Revista Educa{\c{c}}{\~{a}}o e Linguagens}, v.~1, n.~1, p. 188--201,
-  2012.}
-
 \bibitem{World2015}
 \abntrefinfo{WorldStandards}{WORLDSTANDARDS}{2015}
 {WORLDSTANDARDS. \emph{{The World's Scripts and alphabets}}. 2015.
@@ -195,6 +197,22 @@ Dispon{\'\i}vel em: \url{http://www.worldstandards.eu/other/alphabets/}.}
 {BISHOP, C.~M. Pattern recognition and machine learning.
 v.~128, p.~1--3, 2006.}
 
+\bibitem{samuel1959}
+\abntrefinfo{Samuel}{SAMUEL}{1959}
+{SAMUEL, A.~L. Some studies in machine learning using the game of checkers.
+\emph{IBM Journal of Research and Development}, v.~3, n.~3, p. 210--229, 1959.}
+
+\bibitem{ng2016}
+\abntrefinfo{Ng}{NG}{2016}
+{NG, A. \emph{Machine Learning: Introduction}. 2016.}
+
+\bibitem{libralao2003}
+\abntrefinfo{Libral{\~a}o et al.}{LIBRAL{\~A}O et al.}{2003}
+{LIBRAL{\~A}O, G.~L.; OSHIRO, R.~M.; NETTO, A.~V.; CARVALHO, A.; OLIVEIRA, M.
+  T{\'e}cnicas de aprendizado de m{\'a}quina para an{\'a}lise de imagens
+  oftalmol{\'o}gicas.
+\emph{S{\~a}o Paulo. Universidade de S{\~a}o Paulo}, 2003.}
+
 \bibitem{Miranda2013}
 \abntrefinfo{Miranda et al.}{MIRANDA et al.}{2013}
 {MIRANDA, R. A.~R.; SILVA, F.~A. da; PAZOTI, M.~A.; ARTERO, A.~O.; PITERI,
@@ -203,6 +221,11 @@ v.~128, p.~1--3, 2006.}
 ISSN 21788332.
 Dispon{\'\i}vel em:
   \url{http://revistas.unoeste.br/revistas/ojs/index.php/ce/article/view/943/998}.}
+
+\bibitem{maindonald2007}
+\abntrefinfo{Maindonald}{MAINDONALD}{2007}
+{MAINDONALD, J. Parametric models for discrimination \& classification.
+2007.}
 
 \bibitem{Feris2016}
 \abntrefinfo{Feris}{FERIS}{2016}
@@ -227,6 +250,13 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Szeliski}{SZELISKI}{2010}
 {SZELISKI, R. \emph{Computer vision: algorithms and applications}. [S.l.]:
   Springer Science \& Business Media, 2010. 575--621~p.}
+
+\bibitem{Zramdini1995}
+\abntrefinfo{Zramdini}{ZRAMDINI}{1995}
+{ZRAMDINI, A.
+\emph{Study of optical font recognition based on global typographical
+  features}.
+Tese (Doutorado) --- University of Fribourg (Switzerland, 1995.}
 
 \bibitem{Shi1997}
 \abntrefinfo{Shi, Brook e Brook}{SHI; BROOK; BROOK}{1997}
@@ -265,6 +295,77 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.patrec.2012.09.012}.}
 \emph{Procedia Computer Science}, Elsevier, v.~3, p. 1055--1059, 2011.
 ISSN 18770509.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.procs.2010.12.173}.}
+
+\bibitem{ojala1994}
+\abntrefinfo{Ojala, Pietikainen e Harwood}{OJALA; PIETIKAINEN; HARWOOD}{1994}
+{OJALA, T.; PIETIKAINEN, M.; HARWOOD, D. Performance evaluation of texture
+  measures with classification based on kullback discrimination of
+  distributions. In:  IEEE. \emph{Pattern Recognition, 1994. Vol. 1-Conference
+  A: Computer Vision \& Image Processing., Proceedings of the 12th IAPR
+  International Conference on}. [S.l.], 1994. v.~1, p. 582--585.}
+
+\bibitem{bierut2010}
+\abntrefinfo{BIERUT, HELFAND e POYNOR}{BIERUT; HELFAND; POYNOR}{2010}
+{BIERUT, M.; HELFAND, J.; POYNOR, R. Textos cl{\'a}ssicos do design
+  gr{\'a}fico.
+\emph{S{\~a}o Paulo: WMF Martins}, 2010.}
+
+\bibitem{bringhurst2005}
+\abntrefinfo{Bringhurst}{BRINGHURST}{2005}
+{BRINGHURST, R. \emph{Elementos do estilo tipogr{\'a}fico}. [S.l.]: Editora
+  Cosac Naify, 2005.}
+
+\bibitem{lupton2014}
+\abntrefinfo{Lupton}{LUPTON}{2014}
+{LUPTON, E. \emph{Thinking with type: A critical guide for designers, writers,
+  editors, \& students}. [S.l.]: Chronicle Books, 2014.}
+
+\bibitem{kane2012}
+\abntrefinfo{KANE}{KANE}{2012}
+{KANE, J. Manual dos tipos.
+\emph{Barcelona: G. Gili}, 2012.}
+
+\bibitem{rocha2012}
+\abntrefinfo{ROCHA}{ROCHA}{2012}
+{ROCHA, C. Novo projeto tipogr{\'a}fico.
+\emph{S{\~a}o Paulo: Rosari}, 2012.}
+
+\bibitem{perottoalvares2005}
+\abntrefinfo{Perotto e Álvares}{PEROTTO; ÁLVARES}{2005}
+{PEROTTO, F.; ÁLVARES, L. \emph{Aprendizagem de Máquina}. 2005.}
+
+\bibitem{kohavi1995}
+\abntrefinfo{Kohavi et al.}{KOHAVI et al.}{1995}
+{KOHAVI, R. et al. A study of cross-validation and bootstrap for accuracy
+  estimation and model selection. In:  STANFORD, CA. \emph{Ijcai}. [S.l.],
+  1995. v.~14, n.~2, p. 1137--1145.}
+
+\bibitem{gonzalez2013}
+\abntrefinfo{Gonzalez}{GONZALEZ}{2013}
+{GONZALEZ, J.~A. \emph{Sistemas Inteligentes: Classificação e Regras de
+  Classificação}. 2013.}
+
+\bibitem{schneider1997}
+\abntrefinfo{Schneider}{SCHNEIDER}{1997}
+{SCHNEIDER, J. \emph{Cross Validation}. 1997.
+Dispon{\'\i}vel em: \url{https://www.cs.cmu.edu/~schneide/tut5/node42.html}.}
+
+\bibitem{muscipadroes}
+\abntrefinfo{MUSCI et al.}{MUSCI et al.}{}
+{MUSCI, M. et al. \emph{Padr{\~o}es Bin{\'a}rios Locais na
+  Classifica{\c{c}}{\~a}o de Imagens de Sensoriamento Remoto In: XV
+  Simp{\'o}sio Brasileiro de Sensoriamento Remoto, 2011, Curitiba}. [S.l.]:
+  Anais.}
+
+\bibitem{prince2012}
+\abntrefinfo{Prince}{PRINCE}{2012}
+{PRINCE, S.~J. \emph{Computer vision}. 1. ed. [S.l.]: Cambridge UNi. Press,
+  2012.}
+
+\bibitem{gonzalezwoods2014}
+\abntrefinfo{Gonzalez e Woods}{GONZALEZ; WOODS}{2014}
+{GONZALEZ, R.~C.; WOODS, R.~E. \emph{Digital image processing}. 3. ed. [S.l.]:
+  Dorling Kindersley, 2014.}
 
 \bibitem{mitchell1997}
 \abntrefinfo{Mitchell}{MITCHELL}{1997}
@@ -314,17 +415,41 @@ Dispon{\'\i}vel em:
 \emph{IEEE transactions on electronic computers}, IEEE, n.~3, p. 326--334,
   1965.}
 
-\bibitem{martin2012}
-\abntrefinfo{Martin}{MARTIN}{2012}
-{MARTIN, C.~H. \emph{Kernels Part 1: What is an RBF Kernel? Really?} 2012.
-Dispon{\'\i}vel em:
-  \url{https://calculatedcontent.com/2012/02/06/kernels\_part\_1/}.}
-
 \bibitem{pal2008}
 \abntrefinfo{Pal}{PAL}{2008}
 {PAL, M. Multiclass approaches for support vector machine based land cover
   classification.
 \emph{arXiv preprint arXiv:0802.2411}, 2008.}
+
+\bibitem{breiman2001}
+\abntrefinfo{Breiman}{BREIMAN}{2001}
+{BREIMAN, L. Random forests.
+\emph{Machine learning}, Springer, v.~45, n.~1, p. 5--32, 2001.}
+
+\bibitem{guedessistema}
+\abntrefinfo{Guedes e Guimar{\~a}es}{GUEDES; GUIMAR{\~A}ES}{}
+{GUEDES, A. R.~M.; GUIMAR{\~A}ES, V.~L. Sistema de identifica{\c{c}}{\~a}o de
+  {\'i}ris utilizando local binary pattern e random forest.}
+
+\bibitem{caruana2008}
+\abntrefinfo{Caruana, Karampatziakis e Yessenalina}{CARUANA; KARAMPATZIAKIS;
+  YESSENALINA}{2008}
+{CARUANA, R.; KARAMPATZIAKIS, N.; YESSENALINA, A. An empirical evaluation of
+  supervised learning in high dimensions. In:  ACM. \emph{Proceedings of the
+  25th international conference on Machine learning}. [S.l.], 2008. p.
+  96--103.}
+
+\bibitem{neto2014}
+\abntrefinfo{Neto}{NETO}{2014}
+{NETO, C. \emph{Potencial de técnicas de mineração de dados para o
+  mapeamento de áreas cafeeiras}. [s.n.], 2014. 14-16~p. Dispon{\'\i}vel em:
+  \url{http://wiki.dpi.inpe.br/lib/exe/fetch.php?media=ser300:alunos2014:cesare\_monografia.pdf}.}
+
+\bibitem{bosch2007}
+\abntrefinfo{Bosch, Zisserman e Munoz}{BOSCH; ZISSERMAN; MUNOZ}{2007}
+{BOSCH, A.; ZISSERMAN, A.; MUNOZ, X. Image classification using random forests
+  and ferns. In:  IEEE. \emph{Computer Vision, 2007. ICCV 2007. IEEE 11th
+  International Conference on}. [S.l.], 2007. p.~1--8.}
 
 \bibitem{fontsinuse2017}
 \abntrefinfo{Use}{USE}{2017}
@@ -337,8 +462,8 @@ Dispon{\'\i}vel em: \url{http://fontsinuse.com}.}
 
 \bibitem{opencv2017}
 \abntrefinfo{Team}{TEAM}{2017}
-{TEAM, O. \emph{OpenCV library}. 2017.
-Dispon{\'\i}vel em: \url{http://opencv.org/}.}
+{TEAM, O. \emph{OpenCV library - About}. 2017.
+Dispon{\'\i}vel em: \url{http://opencv.org/about.html}.}
 
 \bibitem{skimage2014}
 \abntrefinfo{Walt et al.}{WALT et al.}{2014}
@@ -368,6 +493,12 @@ Dispon{\'\i}vel em: \url{https://www.scipy.org/about.html}.}
 {NUMPY, D. \emph{NumPy — NumPy}. 2017.
 Dispon{\'\i}vel em: \url{http://www.numpy.org/}.}
 
+\bibitem{rosebrock2015}
+\abntrefinfo{Rosebrock}{ROSEBROCK}{2015}
+{ROSEBROCK, A. \emph{Local Binary Patterns with Python and OpenCV}. 2015.
+Dispon{\'\i}vel em:
+  \url{http://www.pyimagesearch.com/2015/12/07/local-binary-patterns-with-python-opencv/}.}
+
 \bibitem{la1999}
 \abntrefinfo{Manna, Colia e Sperduti}{MANNA; COLIA; SPERDUTI}{1999}
 {MANNA, S. L.; COLIA, A.; SPERDUTI, A. Optical font recognition for multi-font
@@ -381,5 +512,17 @@ Dispon{\'\i}vel em: \url{http://www.numpy.org/}.}
   features.
 \emph{IEEE Transactions on pattern analysis and machine intelligence}, IEEE,
   v.~20, n.~8, p. 877--882, 1998.}
+
+\bibitem{zhang2011}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2011}
+{ZHANG, J.; HUANG, K.; YU, Y.; TAN, T. Boosted local structured hog-lbp for
+  object localization. In:  IEEE. \emph{Computer Vision and Pattern Recognition
+  (CVPR), 2011 IEEE Conference on}. [S.l.], 2011. p. 1393--1400.}
+
+\bibitem{wang2009}
+\abntrefinfo{Wang, Han e Yan}{WANG; HAN; YAN}{2009}
+{WANG, X.; HAN, T.~X.; YAN, S. An hog-lbp human detector with partial occlusion
+  handling. In:  IEEE. \emph{Computer Vision, 2009 IEEE 12th International
+  Conference on}. [S.l.], 2009. p. 32--39.}
 
 \end{thebibliography}
