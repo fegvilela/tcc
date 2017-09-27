@@ -1,1 +1,16 @@
 \chapter{Conclusão}
+\label{ch:Conclusao}
+
+Dado que a proposta deste trabalho é desenvolver um sistema de reconhecimento de padrões em tipos para aplicação no projeto de Tipografia Tátil, que tem como objetivo auxiliar o ensino de tipografia a deficientes visuais, nesta monografia foi implementado um sistema capaz de reconhecer a qual tipografia pertence o caractere apresentado em imagem, classificando-o de acordo com as tipografias escolhidas no projeto.
+
+A criação do banco de imagens é uma contribuição para outros projetos de mesma área, já que é uma etapa que, no geral, demanda uma grande quantidade de tempo no processo de desenvolvimento de um projeto de Aprendizado de Máquina. Para o acesso ao banco de imagens completo, tem-se um \textit{link} apresentado no capítulo anterior, bem como o de todos algoritmos desenvolvidos.
+
+Em relação ao produto de tecnologia assistiva como um todo, testes foram feitos com deficientes visuais para ajustes no desenvolvimento das peças táteis. No entanto, em relação ao sistema computacional interativo, foram feitas apenas entrevistas com alguns deficientes visuais. Após o desenvolvimento de mais partes do sistema computacional, é necessário que sejam feitos mais testes para que ajustes possam ser realizados no sistema, de forma a torná-lo de fácil utilização para o usuário.
+
+Como trabalhos futuros, deve-se buscar melhorar o índice de acerto do sistema classificador, de forma a atingir um nível próximo ou superior ao obtido por outros autores \citeC{Zramdini1995}. Para tal, pretende-se tentar uma abordagem parecida com a usada no trabalho citado, criando, para cada letra, um sistema classificador distinto para realizar a OFR.
+
+ O descritor de imagem utilizado, LBP, foi suficiente para a descrição das imagens para esta aplicação. Porém, outra possibilidade é utilizar outros descritores de imagem para a extração de atributos, ou uma combinação, como, por exemplo, um combinação do LBP e HOG (\textit{Histogram of Oriented Gradient}), que apresenta melhor desempenho em variados casos \citeC{zhang2011} \citeC{wang2009}. Ainda, o modelo classificador Floresta Aleatória obteve um índice de acerto de classificação suficiente para primeira versão do sistema, porém pode-se escolher um novo modelo classificador para a implementação para a fase final do trabalho. Por último, pretende-se alimentar o conjunto de dados de treinamento com mais exemplos, o que pode resultar em um melhor desempenho do sistema \citeC{perottoalvares2005}.
+
+Finalmente, para que o sistema esteja completo é necessário implementar o OCR para que o caractere da peça seja reconhecido. É necessário também que todas as funcionalidades do sistema sejam agrupadas. Sendo assim, uma fase de integração dos algoritmos com uma interface para o usuário é necessária. Este passo vai permitir integrar o sistema classificador com a síntese de voz, que vai fornecer os comandos para guiar o usuário e informá-lo segundo material didático já desenvolvido para o projeto \citeC{cruz2017}.
+
+

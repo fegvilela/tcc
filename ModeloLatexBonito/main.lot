@@ -1,2 +1,12 @@
 \select@language {brazilian}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Fun\IeC {\c c}\IeC {\~o}es \textit {kernel} e seus par\IeC {\^a}metros, utilizadas neste projeto [\citeonline {lorena2007}] e [\citeonline {martin2012}]\relax }}{28}{table.caption.22}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Resultados de \IeC {\'\i }ndice de acerto da classifica\IeC {\c c}\IeC {\~a}o em testes de valida\IeC {\c c}\IeC {\~a}o cruzada do sistema classificador utilizando o modelo SVM, avaliado com banco de imagens em processo de incrementa\IeC {\c c}\IeC {\~a}o tipografia \IeC {\`a} tipografia.\relax }}{46}{table.caption.37}
+\contentsline {table}{\numberline {5.2}{\ignorespaces \IeC {\'I}ndices de acerto da classifica\IeC {\c c}\IeC {\~a}o em testes de valida\IeC {\c c}\IeC {\~a}o cruzada do sistema com o modelo SVM avaliado com diferentes \textit {kernels} em banco de imagens com nove tipografias.\relax }}{47}{table.caption.39}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Resultados comparativos de \IeC {\'\i }ndice de acerto da classifica\IeC {\c c}\IeC {\~a}o em testes de valida\IeC {\c c}\IeC {\~a}o cruzada do sistema classificador utilizando o modelo SVM linear, avaliado com banco de imagens antes e depois do refinamento, em processo de incrementa\IeC {\c c}\IeC {\~a}o tipografia \IeC {\`a} tipografia, at\IeC {\'e} quatro tipografias.\relax }}{48}{table.caption.40}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Resultados de \IeC {\'\i }ndice de acerto da classifica\IeC {\c c}\IeC {\~a}o em testes de valida\IeC {\c c}\IeC {\~a}o cruzada do sistema com o modelo Floresta Aleat\IeC {\'o}ria, avaliado com banco de imagens em processo de incrementa\IeC {\c c}\IeC {\~a}o tipografia \IeC {\`a} tipografia.\relax }}{48}{table.caption.41}
+\addvspace {10\p@ }

@@ -2,6 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: partes/informacoes.aux
+A level-1 auxiliary file: partes/dedicatoria.aux
+A level-1 auxiliary file: partes/agradecimentos.aux
+A level-1 auxiliary file: partes/resumos.aux
+A level-1 auxiliary file: partes/simbolos.aux
 A level-1 auxiliary file: partes/introducao.aux
 A level-1 auxiliary file: Capitulos/FundamentosTipo/FundamentosTipo.aux
 A level-1 auxiliary file: Capitulos/FundamentosMach/FundamentosMach.aux
@@ -18,21 +22,26 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 10934 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 Warning--entry type for "World2015" isn't style-file defined
---line 259 of file referencias.bib
+--line 477 of file referencias.bib
 Warning--entry type for "Jaws2016" isn't style-file defined
---line 348 of file referencias.bib
+--line 566 of file referencias.bib
 Warning--entry type for "VV2016" isn't style-file defined
---line 356 of file referencias.bib
+--line 574 of file referencias.bib
 Warning--entry type for "OpenBook2016" isn't style-file defined
---line 364 of file referencias.bib
+--line 582 of file referencias.bib
 Warning--entry type for "Linha2008" isn't style-file defined
---line 372 of file referencias.bib
+--line 590 of file referencias.bib
 Warning--entry type for "Tactile2016" isn't style-file defined
---line 380 of file referencias.bib
-Repeated entry---line 470 of file referencias.bib
+--line 598 of file referencias.bib
+Repeated entry---line 638 of file referencias.bib
+ : @book{Kane2012
+ :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 688 of file referencias.bib
  : @book{Kane2012
  :               ,
 I'm skipping whatever remains of this entry
@@ -41,50 +50,51 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo note vazio em Feris2016
+Warning--campo year vazio ou faltando em muscipadroes
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-num.bst versão v-1.9.5           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 61 entries,
+You've used 86 entries,
             6714 wiz_defined-function locations,
-            1568 strings with 19814 characters,
-and the built_in function-call counts, 67921 in all, are:
-= -- 7047
-> -- 1411
-< -- 1311
-+ -- 1817
-- -- 421
-* -- 4377
-:= -- 8326
-add.period$ -- 218
-call.type$ -- 61
-change.case$ -- 594
-chr.to.int$ -- 127
-cite$ -- 60
-duplicate$ -- 5938
-empty$ -- 3463
-format.name$ -- 2253
-if$ -- 14311
+            1680 strings with 23558 characters,
+and the built_in function-call counts, 90600 in all, are:
+= -- 9092
+> -- 2024
+< -- 1562
++ -- 2282
+- -- 606
+* -- 5878
+:= -- 11130
+add.period$ -- 315
+call.type$ -- 86
+change.case$ -- 854
+chr.to.int$ -- 170
+cite$ -- 86
+duplicate$ -- 7564
+empty$ -- 4994
+format.name$ -- 3210
+if$ -- 19447
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1083
-newline$ -- 310
-num.names$ -- 236
-pop$ -- 1402
+missing$ -- 1531
+newline$ -- 418
+num.names$ -- 336
+pop$ -- 2046
 preamble$ -- 1
-purify$ -- 224
+purify$ -- 320
 quote$ -- 0
-skip$ -- 6135
+skip$ -- 7837
 stack$ -- 1
-substring$ -- 3141
-swap$ -- 2353
-text.length$ -- 86
+substring$ -- 4016
+swap$ -- 3000
+text.length$ -- 104
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 5
-warning$ -- 1
-while$ -- 399
+type$ -- 6
+warning$ -- 2
+while$ -- 548
 width$ -- 0
-write$ -- 807
-(There was 1 error message)
+write$ -- 1132
+(There were 2 error messages)
